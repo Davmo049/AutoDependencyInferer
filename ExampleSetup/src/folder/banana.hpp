@@ -1,6 +1,6 @@
 #pragma once
 
-#include "fruit.hpp"
+#include "../fruit.hpp"
 
 class Banana : public Fruit
 {

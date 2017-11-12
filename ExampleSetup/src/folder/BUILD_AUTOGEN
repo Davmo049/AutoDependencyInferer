@@ -1,0 +1,7 @@
+cc_library(
+name = "banana",
+srcs = ["/banana.cpp"],
+hdrs = ["/banana.hpp"],
+deps = [""],
+)
+

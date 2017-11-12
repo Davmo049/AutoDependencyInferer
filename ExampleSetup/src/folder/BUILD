@@ -1,0 +1,8 @@
+cc_library(
+name = "banana",
+visibility = ["//visibility:public"],
+srcs = ["banana.cpp"],
+hdrs = ["banana.hpp"],
+deps = ["//src:fruit"],
+)
+

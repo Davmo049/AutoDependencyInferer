@@ -2,7 +2,7 @@
 #include "circ2.hpp"
 #include "hippo.hpp" //nm W
 #include "fruit.hpp"
-#include "banana.hpp"
+#include "folder/banana.hpp"
 #include "globals.hpp" //nm U
 
 #include <iostream>

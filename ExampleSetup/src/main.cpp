@@ -2,8 +2,7 @@
 
 #include "circ1.hpp"
 #include "hippo.hpp"
-#include "fruit.hpp"
-#include "banana.hpp"
+#include "folder/banana.hpp"
 
 #include <utility>
 

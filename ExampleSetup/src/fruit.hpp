@@ -5,12 +5,9 @@
 class Fruit
 {
 public:
-    Fruit() : number(123) {}
+    Fruit();
     Fruit(int num) : number(num) {}
-    virtual void eat()
-    {
-        std::cout << "YUMMY" << number << std::endl;
-    }
+    virtual void eat();
 private:
     int number;
 };

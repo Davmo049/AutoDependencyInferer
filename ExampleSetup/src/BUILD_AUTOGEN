@@ -1,0 +1,61 @@
+cc_library(
+name = "unused2",
+srcs = ["/unused2.cpp"],
+hdrs = [""],
+deps = [":unused"],
+)
+
+cc_library(
+name = "fruit",
+srcs = ["/fruit.cpp"],
+hdrs = ["/fruit.hpp"],
+deps = [""],
+)
+
+cc_library(
+name = "globals",
+srcs = [""],
+hdrs = ["/globals.hpp"],
+deps = [""],
+)
+
+cc_binary(
+name = "main2",
+srcs = ["/main2.cpp"],
+deps = ["//../../../../../../ExampleSetup/src/folder:banana", ":apple"],
+)
+
+cc_binary(
+name = "main",
+srcs = ["/main.cpp"],
+deps = ["//../../../../../../ExampleSetup/src/folder:banana", ":tangle#0", ":hippo"],
+)
+
+cc_library(
+name = "tangle#0",
+srcs = ["/circ2.cpp", "/circ1.cpp"],
+hdrs = ["/circ2.hpp", "/circ1.hpp"],
+deps = [":fruit", "//../../../../../../ExampleSetup/src/folder:banana", ":globals", ":tangle#0", ":hippo"],
+)
+
+cc_library(
+name = "hippo",
+srcs = [""],
+hdrs = ["/hippo.hpp"],
+deps = [":fruit"],
+)
+
+cc_library(
+name = "unused",
+srcs = ["/folder/unused.cpp"],
+hdrs = ["/unused.hpp"],
+deps = [""],
+)
+
+cc_library(
+name = "apple",
+srcs = ["/apple.cpp"],
+hdrs = ["/apple.hpp"],
+deps = [""],
+)
+
